@@ -15,7 +15,15 @@
 			<form method = "post">
 				@if (Model.Books.Count()>0)
 				{
-					 
+					 <table class="table table-striped border">
+						 <th>
+							 <label asp-for="Books.FirstOrDefault().Name"></label>
+						 </th>
+                         <th>
+                             <label asp-for="Books.FirstOrDefault().Author"></label>
+                         </th>
+
+					 </table>
 				}
 				else
 				{
